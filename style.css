@@ -1,0 +1,912 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(background.jpg);
+    background-size: 100%;
+    text-align: centre;
+}
+.menu{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+}
+.logo{
+    position: absolute;
+    top: -10px;
+    left: 3%;
+}
+.logo img{
+    width: 200px;
+}
+.menu-options{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 20px;
+}
+#menu-options{
+    text-decoration: none;
+    margin-left: 0px;
+    color: white;
+    padding: 10px;
+
+}
+#home-page{
+    text-decoration:none;
+    margin-left: 30px;
+    color: white;
+    background-color: black;
+    padding: 10px 40px 10px 40px;
+
+}
+#content-p{
+  font-family: 'Satisfy', cursive;
+  font-size: 20px;
+}
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid grey;
+    float: left;
+    width: 17%;
+    background: #f1f1f1;
+    position: absolute;
+    top: 20px;
+    left: 18%;
+    border: none;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 3%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 15px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    position: absolute;
+    left: 35%;
+    top: 20px;
+    border: none;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.menu.sticky{
+    padding: 10px 20px;
+    z-index: 2;
+    height:80px;
+    background-color: rgba(130, 88, 88, 0.966);
+  
+}
+#menu-options:hover{
+    background-color: gray;
+
+}
+.web-view{
+    width: 100%;
+    position: relative;
+}
+.web-view img{
+    width: 100%;
+    height: 100vh;
+}
+.text-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+}
+#first-p{
+    color: white;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+   
+}
+#second-p{
+    color: rgb(255, 255, 0);
+    font-size: 40px;
+    margin-left: 2px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+   
+}
+.text-content button:hover{
+    background-color: rgb(255, 210, 210);
+    color: black;
+    
+}
+.open-button {
+    background-color: red;
+    color: white;
+    width: 40%;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    box-shadow: 2px 2px 25px 0px rgba(255, 249, 249, 0.945);
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.mySlides{
+  filter: blur(0px);
+}
+html{
+    scroll-behavior: smooth;
+}
+.parts{
+    display: flex;
+    text-align: center;
+}
+#heading{
+    text-align: center;
+    margin-top: 50px;
+    padding: 0 10% 0 10%;
+    margin-bottom: 40px;
+    font-family: 'Oswald', sans-serif;
+}
+#heading2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -40px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(255, 251, 251);
+    background-color: rgb(160, 45, 45);
+    padding: 5px;
+}
+
+/* about us section */
+
+
+.About-us{
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5% 0% 0% 0;
+    gap: 20px;
+    
+}
+#about-text{
+    color: rgb(57, 55, 55);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#about-text2{
+    color: rgb(184, 122, 8);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+}
+#about-text3{
+    padding: 40px;
+    font-size: 17px;
+}
+.about-1{
+    background-color:rgb(255, 242, 213);
+    color: rgb(56, 53, 53);
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.about-2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    text-align: center;
+    padding-bottom: 30px;
+    gap: 30px;
+}
+.features{
+    background-color: white;
+    padding: 10px;
+}
+
+
+
+.why-us{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    text-align: center;
+    gap: 30px;  
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0px;
+    
+
+    /* background-color: rgb(241, 176, 255); */
+  }
+  .card:hover{
+    transform: scale(1.05);
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+ 
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 15px 16px 15px 20px;
+    
+  }
+  .card img{
+    border-radius: 10px 10px 0px 0px;
+   
+  }
+  .card h3{
+    color: rgb(167, 71, 71);
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+
+
+  }
+  .card p{
+    color: rgb(94, 81, 81);
+    text-align: left;
+  }
+  /* .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: rgb(195, 248, 248);
+    color: white;
+  } */
+  :root {
+    --surface-color: #fff;
+    --curve: 40;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  .explore-button{
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  #btn1{
+    background-color: rgb(58, 119, 234);
+    color: white;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 3px 3px 20px 1px rgb(207, 161, 251);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#btn1:hover{
+    background-color: rgb(248, 223, 223);
+    color: black;
+    
+}
+#waterfalls{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+   
+}#waterfalls:hover{
+    color: black;
+}
+.checked{
+    color: orange;
+}
+.booking-button{
+    background-color: rgb(255, 54, 19);
+    border: none;
+    border-radius: 2px;
+    padding: 8px;
+    margin-left: 10px;
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+.booking-button:hover{
+    background-color: rgb(0, 123, 255);
+}
+
+
+
+/* section 2 */
+
+.catergories{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 40px;
+    padding-top: 0px; 
+    gap: 30px;  
+    /* margin-bottom: 60px; */
+    
+
+}
+.section-2{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 20px 0px 20px 0px ;
+    
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.slide-show{
+  width: 100%;
+  padding: 2% 15% 2% 15%;
+}
+.topnav{
+  display: none;
+}
+
+.user-rating{
+  padding: 100px 20% 100px 20%;
+  background-color: white;
+}
+
+
+
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  /* Hide the right column on small screens */
+  .right {
+    display: none;
+  }
+}
+
+.reviews{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 40px;
+  padding-top: 0px; 
+  gap: 30px;
+}
+
+   
+
+.card3{
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  transition: 0.3s;
+  border-radius: 10px;
+  padding: 5% 20% 5% 20%;
+
+}
+.reviews img{
+  width: 100%;
+  border-radius: 500px;
+}
+.card3:hover{
+  transform: scale(1.1);
+}
+.comments h3{
+  color: red;
+  font-size: 20px;
+  padding: 5%;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* footer style */
+
+
+.footer{
+  background-color: rgb(40, 36, 36);
+  text-align: center;
+  color: rgb(198, 189, 189);
+  font-size: 13px;
+  padding: 30px;
+} 
+#footer-p{
+  color: yellow;
+}
+.footer-text{
+  font-size: 13px;
+  padding: 40px 0px 20px 0px;
+}
+
+/* top button */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+.footer-options{
+  display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 10px;
+    padding-top: 0px; 
+    margin-bottom: 20px;
+    gap: 10px;  
+    text-align: left;
+
+}
+.fo1{
+  list-style: none;
+  margin-top: 20px;
+  margin-left: -40px;
+  font-size: 13px;
+}
+.f-heading{
+  /* text-decoration: underline; */
+  /* text-decoration-color: red; */
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+#newsletter{
+  margin: 20px 0px 10px 0px;
+  font-size: 13px;
+}
+#news{
+  background: red;
+  color: white;
+  margin-top: 5px;
+  border-radius: 2px;
+  padding: 3px 15px 3px 2px;
+  border: none;
+}
+#news:hover{
+  background-color: white;
+  color: black;
+}
+#email{
+  border: none;
+  border-radius: 2px;
+  height: 22px;
+  width: 120px;
+}
+.phone-view{
+  display: none;
+}
+#myBtn:hover{
+  transform: scale(0.9);
+}
+.social2 a img{
+  border-radius: 30px;
+  
+}
+.social2{
+  display: flex;
+  padding: 30px;
+}
+#close-button{
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  font-size: 31px;
+  background-color: rgba(255, 0, 0, 0.781);
+
+}
+
+
+
+
+
+
+
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@media(width<1100px){
+ .menu-options{
+    display: none;
+ }
+ .logo img{
+    position: absolute;
+    top: 10px;
+    width: 130px;}
+ .topnav {
+    display: revert;
+    width: 100%;
+    height: 30px;
+    /* overflow: hidden; */
+   
+    
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    position: fixed;
+    
+    
+  }
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    background-color:rgb(255, 250, 250);
+    color: rgb(255, 255, 255);
+    text-align: left;
+    width: 50%;
+    margin-left: 50%;
+    height: 100vh;
+    margin-top: -30px;
+  }
+  .topnav #myLinks:hover{
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: rgb(42, 38, 38);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    z-index: 2;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    color: white;
+  }
+  .icon{
+    width: 20px;
+    height: 50px;
+  }
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid grey;
+    float: left;
+    width: 17%;
+    background: #f1f1f1;
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    display: none;
+    border: none;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 3%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 15px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    position: absolute;
+    left: 57%;
+    top: 20px;
+    border: none;
+    display: none;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+    display: none;
+  }
+  #menu-img{
+    width: 100%;
+    padding: 100px;
+  }
+  
+}
+@media(width<600px){
+  
+  .web-view{
+    display: none;
+  }
+  .phone-view{
+    display: revert;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+  }
+  .phone-view img{
+    width: 100%;
+    height: 100vh;
+  
+}
+.mySlides1{
+  width: 100%;
+}
+.user-rating{
+  padding: 15%;
+  font-size: small;
+}
+#first-p{
+  color: white;
+  font-size: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+ 
+}
+#content-p{
+  font-size: 10px;
+}
+#second-p{
+  color: rgb(255, 255, 0);
+  font-size: 35px;
+  margin-left: 2px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+ 
+}
+p#content-p{
+  font-size: 17px;
+  
+}
+.menu.sticky{
+  padding: 10px 20px;
+  z-index: 2;
+  height:70px;
+  background-color: rgba(130, 88, 88, 0.966);
+
+}
+
+
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+/* .open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+} */
+
+/* The popup form - hidden by default */
+/* Styles for the popup form */
+ /* Style for the form popup */
+ .form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+/* Close button style */
+.close-btn {
+  margin-left: 100%;
+  cursor: pointer;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  background-color: red;
+  padding: 10px;
+}
+
+/* Form labels style */
+label {
+  font-weight: bold;
+  color: black;
+}
+
+/* Form input style */
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Form submit button style */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Form submit button hover style */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}

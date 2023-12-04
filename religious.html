@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="logo">
+        <img src="wlogo.png" alt="" />
+      </div>
+      <div class="menu-options">
+        <a id="menu-options" href="index.html">Home</a>
+        <a id="menu-options" href="about.html">About us</a>
+        <a id="menu-options" onclick="openForm()">Book Now</a>
+        <a id="menu-options" href="feedback.html">Feedback</a>
+      </div>
+    </div>
+
+    <!-- menu buttton -->
+
+    <div class="topnav">
+      <div style="display: flex">
+        <img
+          style="margin-left: 30px; margin-top: 10px"
+          width="30px"
+          src="event-organizer-png-8-png-image-organizer-png-350_350.png"
+          alt=""
+        />
+        <h4 style="color: white; margin: 10px; margin-top: 16px"></h4>
+      </div>
+
+      <!-- Navigation links (hidden by default) -->
+
+      <div id="myLinks">
+        <a id="close-button" href="javascript:void(0);" onclick="myFunction1()">
+          &times;</a
+        >
+        <a href="index.html">Home</a>
+        <hr />
+        <a href="#about-us">About us</a>
+        <hr />
+        <a href="#why-us">Why us</a>
+        <hr />
+        <a href="#key-bookings">Key bookings</a>
+        <hr />
+        <a href="#gallery">Gallery</a>
+        <hr />
+        <a href="#contact">Contact</a>
+        <hr />
+
+        <div class="social2">
+          <a
+            title="Linkedin Profile"
+            href="https://www.linkedin.com/in/sumit-raj-a93453227"
+            target="_blank"
+            ><img
+              id="sf"
+              width="20px"
+              height="20px"
+              src="linkedin2.jfif"
+              alt=""
+          /></a>
+          <a
+            title="Click here to DM on instagram"
+            href="https://www.instagram.com\sumit.raj_17"
+            target="_blank"
+            ><img id="sf" width="23x" height="20px" src="iconinsta.jfif" alt=""
+          /></a>
+          <a
+            title="sumit's twitter account"
+            href="https://www.twitter.com\SavageSumit"
+            target="_blank"
+            ><img id="sf" width="20px" height="20px" src="bird.jfif" alt=""
+          /></a>
+        </div>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+
+      <div class="menu-button">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars" id="phone-menu" style="margin-top: 10px"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="form-popup" id="myForm">
+      <span class="close-btn" onclick="closeForm()"> &times; </span>
+      <form action="action_page.php" method="post">
+        <label for="name">Name</label><br />
+        <input
+          type="name"
+          id="name"
+          name="cust_name"
+          required
+          placeholder="Enter Your Name"
+          style="width: 100%; height: 40px"
+        /><br /><br />
+
+        <label for="from">From</label>
+        <input
+          type="text"
+          id="from"
+          name="from_location"
+          required
+          placeholder="Enter Your current Location"
+        /><br /><br />
+
+        <label for="to">To</label>
+        <input
+          type="text"
+          id="to"
+          name="to_location"
+          required
+          placeholder="Enter your destination"
+        /><br /><br />
+        <label for="email">Email</label><br />
+        <input
+          style="width: auto"
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Enter your registered email"
+          style="width: 100%"
+        /><br /><br />
+        <label for="mobile">Mobile Number</label>
+        <input
+          type="text"
+          id="mobile"
+          name="mobile"
+          placeholder="Enter Your mobile Number"
+          required
+        /><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <h2 id="heading">RELIGIOUS<b id="heading2">PLACES</b></h2>
+
+    <!-- 
+    1. Dudhsagar Waterfalls, GOA -->
+
+    <div class="waterfalls">
+      <div class="card">
+        <img src="Ram-Jhula-in-Rishikesh.jpg" alt="" />
+      </div>
+      <div class="text-box">
+        <h3>1. Haridwar and Rishikesh – The Mystic Twin Cities</h3>
+        <p>
+          Haridwar and Rishikesh, two of the holiest religious places in India,
+          have an old world charm that illuminates the soul. Crowds surge into
+          these neighboring towns to take a dip in the Ganges and purify
+          themselves. In addition to the religious significance, the cities have
+          a rich history and mythology associated with them.
+          <br /><br />
+          <b>Key religious attractions: </b>Millions flock every year to these
+          pilgrimage places in India to take a dip in the sacred river Ganges.
+          Har ki Pauri Ghat, Mansa Devi Temple, Maya Devi Temple, and Chandi
+          Devi Temple are the popular ones among other Hindu religious places in
+          India. Besides, both Haridwar and Rishikesh are centers for learning
+          ancient Hindu arts and culture. <br />
+          <b style="color: black">How To Reach:</b> By Air: Jolly Grant Airport
+          (in Dehradun) is the nearest airport to Haridwar (38 km away) and
+          Rishikesh (21 km away). <br />
+          By Rail: Haridwar Junction railway station is the nearest railway
+          station. You can then take a bus or private taxi to Rishikesh. <br />
+          By Road: Luxury and normal buses are easily available to Haridwar and
+          Rishikesh from Delhi, Chandigarh, Shimla and Lucknow.
+          <br />
+          <br />
+          <b style="color: black"> Best Time To Visit</b> : From November to
+          February during summers or June to September during monsoons.
+        </p>
+        <br />
+        <span>Rating |</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+
+    <!-- 2. Bhagsu Waterfalls, Himachal Pradesh -->
+
+    <div class="waterfalls">
+      <div class="card">
+        <img src="varanasi.jpg" alt="" />
+      </div>
+      <div class="text-box">
+        <h3>2. Varanasi,Uttar Pradesh</h3>
+        <p>
+          Considered to be one of the most spiritual places in India, Varanasi
+          is a sight to behold. It is an exhilarating and an exhausting
+          experience. Yet, one that forces you into the folds of its chaos and
+          in turn liberates you. A magical place, Varanasi is bound to give you
+          a spiritual high.
+          <br /><br />
+          <b style="color: black">How To Reach:</b> By Air: Lal Bahadur Shastri
+          International Airport in Varanasi is well connected to other Indian
+          cities. <br />
+          By Rail: The Varanasi Junction railway station is connected to all
+          major cities in India. <br />
+          By Road: Buses are available from Delhi and adjoining cities in Uttar
+          Pradesh. <br /><br />
+          <b style="color: black"> Where to stay:</b> : Like Haridwar and
+          Rishikesh, plenty of ashrams offering accommodation to the tourists
+          are available. You can also choose to stay in budget and luxury
+          hotels.
+        </p>
+        <br />
+        <span>Rating |</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+
+    <!-- 3. Athirapally Waterfalls, Kerala -->
+
+    <div class="waterfalls">
+      <div class="card">
+        <img src="vrindavan.jpg" alt="" />
+      </div>
+      <div class="text-box">
+        <h3>3. Mathura and Vrindavan</h3>
+        <p>
+          Mathura and Vrindavan are bound to be in any list of popular Hindu
+          religious places in India. Famous for being the birthplace of the
+          Hindu God Krishna, Mathura is held in sanctity by the Hindus,
+          Buddhists, and Jains alike. The colossal temples and ghats that fill
+          up the towns of Mathura and Vrindavan foster a complacent feeling of
+          devotion.
+          <br /><br />
+          <b style="color: black">How To Reach:</b> By Air: The nearest airport
+          is Kheria Airport in Agra (60 km). You can also fly till the Indira
+          Gandhi International Airport in Delhi (170 km) and then take a
+          bus/private taxi.
+
+          <br />
+          By Rail: Mathura railway station is connected to all the major cities
+          in India. <br />
+          By Road: The Yamuna Expressway ensures swift connectivity. Buses and
+          private taxis can be taken from Delhi NCR. <br /><br />
+          <b style="color: black"> Where to stay: </b> : Budget and luxury
+          hotels and guest houses are available. Homestays are also an option.
+        </p>
+        <br />
+        <span>Rating |</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+
+    <!-- 4.Irupu Falls,Karnataka -->
+
+    <div class="waterfalls">
+      <div class="card">
+        <img src="Bodhgaya.jpg" alt="" />
+      </div>
+      <div class="text-box">
+        <h3>4.BodhGaya,Bihar</h3>
+        <p>
+          Situated in the Gaya district of Bihar, Bodhgaya has been developed as
+          an international place of pilgrimage. Attracting spiritualists from
+          all over the world, Bodhgaya is among the most religious places in
+          India. Today, it has monasteries and temples established by Tibetans,
+          Sri Lankans, Bhutanese, Japanese, and Thai.
+          <br /><br />
+          <b style="color: black">How To Reach:</b> By Air: Gaya Airport, which
+          is 5 km away from the temple city, is the nearest airport. Patna
+          Airport (115 km away) is well connected to major Indian cities. <br />
+          By Rail: Gaya Junction is the nearest railway station.
+
+          <br />
+          By Road: Bodhgaya is well connected by road to other cities in Bihar
+          such as Patna, Gaya, and Nalanda.<br /><br />
+          <b style="color: black"> Where to stay</b>: Bodhgaya is among the
+          famous religious places in India. Thus, the Bihar State Tourism runs
+          hotels in the city offering cheap accommodation. Budget and luxury
+          hotels can also be booked easily.
+        </p>
+        <br />
+        <span>Rating |</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+
+    <!-- 5. Elephant Falls, Shillong -->
+
+    <div class="waterfalls">
+      <div class="card">
+        <img src="Rameswaram.jpg" alt="" />
+      </div>
+      <div class="text-box">
+        <h3>5.Rameshwaram – Temple Hopping In The Land Of Rama</h3>
+        <p>
+          Among the famous pilgrimage places in South India, this enigmatic
+          island city is laden with history and culture. Ancient shrines,
+          temples, quaint villages, and scintillating view of the Bay of Bengal
+          make a trip to Rameshwaram a must for those seeking paradise on earth.
+          <br /><br />
+          <b style="color: black">How To Reach:</b> By Air: The nearest airport
+          is the Madurai International Airport (175 km away). Buses and private
+          taxis can be hired from Madurai. <br />
+          By Rail: The Rameshwaram railway station is connected to Madurai,
+          Chennai, Trichy, Coimbatore, and Thanjavur. <br />
+          By Road: The city is well connected by road to other cities in Tamil
+          Nadu.<br /><br />
+          <b style="color: black"> Where to stay</b> : Budget and luxury hotels
+          are available easily in Rameshwaram. You can also stay in yatri niwas
+          palaces.
+        </p>
+        <br />
+        <span>Rating |</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-options">
+        <div>
+          <h3 class="f-heading">About Tour-info</h3>
+          <ul class="fo1">
+            <li>About Tour-info</li>
+            <li>Top Destinations</li>
+            <li>Our Gallery</li>
+            <li>Why us</li>
+            <li>Categories</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="f-heading">Help & FAQS</h3>
+          <ul class="fo1">
+            <li>Online booking</li>
+            <li>Refund Policies</li>
+            <li>Customer Service</li>
+            <li>Booking Confirmation</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="f-heading">Ways to Book</h3>
+          <ul class="fo1">
+            <li>Booking - options</li>
+            <li>Popular Destinations</li>
+            <li>Cheapest rates</li>
+            <li>Easy to book</li>
+            <li>Categories</li>
+            <li>Book a Trip</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="f-heading">Newsletter</h3>
+          <p id="newsletter">
+            Subscribe our Newletter to stay updated with new Destinations and
+            get notified Through mail
+          </p>
+          <div>
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="Enter Your email"
+            />
+            <button id="news">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <hr style="height: 0.5px" />
+      <div class="footer-text">
+        <t
+          >&copy;Copyright 2023 <strong>Sumit Raj</strong>.All rights reserved
+        </t>
+        <p id="footer-c">Designed By <b id="footer-p">Sumit Raj</b></p>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script src="main.js"></script>
+  </body>
+</html>

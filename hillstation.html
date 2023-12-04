@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="logo">
+        <img src="wlogo.png" alt="" />
+      </div>
+      <div class="menu-options">
+        <a id="menu-options" href="index.html">Home</a>
+
+        <a id="menu-options" href="about.html">About us</a>
+        <a id="menu-options" onclick="openForm()">Book Now</a>
+        <a id="menu-options" href="feedback.html">Feedback</a>
+      </div>
+    </div>
+
+    <div class="form-popup" id="myForm">
+      <span class="close-btn" onclick="closeForm()"> &times; </span>
+      <form action="action_page.php" method="post">
+        <label for="name">Name</label><br />
+        <input
+          type="name"
+          id="name"
+          name="cust_name"
+          required
+          placeholder="Enter Your Name"
+          style="width: 100%; height: 40px"
+        /><br /><br />
+
+        <label for="from">From</label>
+        <input
+          type="text"
+          id="from"
+          name="from_location"
+          required
+          placeholder="Enter Your current Location"
+        /><br /><br />
+
+        <label for="to">To</label>
+        <input
+          type="text"
+          id="to"
+          name="to_location"
+          required
+          placeholder="Enter your destination"
+        /><br /><br />
+        <label for="email">Email</label><br />
+        <input
+          style="width: auto"
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Enter your registered email"
+          style="width: 100%"
+        /><br /><br />
+        <label for="mobile">Mobile Number</label>
+        <input
+          type="text"
+          id="mobile"
+          name="mobile"
+          placeholder="Enter Your mobile Number"
+          required
+        /><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <h2 id="heading">TOP <b id="heading2">HILL STATIONS</b></h2>
+    <div class="waterfalls">
+      <div class="card">
+        <img src="Manali.jpg" alt="" />
+      </div>
+      <div class="text-box">
+        <h3>1. Manali, Himachal Pradesh</h3>
+        <p>
+          Nestled in the majestic Himalayas, Manali is the perfect destination
+          for nature lovers and adventure seekers. Dotted with verdant valleys,
+          milky-white waterfalls, fruit orchards and expansive meadows, its
+          natural beauty is beyond compare. This stunning hill station is also
+          home to temples and ancient forts and is peppered with cosy cafes and
+          shopping joints. Adventure seekers are in for a treat as the hill
+          station has plenty of options for an adrenaline rush.
+          <br /><br />
+
+          <b style="color: black">How To Reach:</b> Nearest Airport: Bhuntar
+          Airport (51 km) <br />
+          Nearest Train Station: Joginder Nagar Railway Station (144 km) <br />
+          <br />
+          <b style="color: black"> Best Time To Visit</b> : October to June.
+        </p>
+        <br />
+        <span>Rating |</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+    <div class="waterfalls">
+      <div class="card">
+        <img src="Mussorie.jpg" alt="" />
+      </div>
+      <div class="text-box">
+        <h3>2. Mussoorie, Uttarakhand</h3>
+        <p>
+          Located 34 km from Dehradun, Mussoorie is a picturesque hill station
+          that promises a pleasant climate and abundant natural beauty. The town
+          is surrounded by Shivalik Ranges and Doon Valley and is one of the
+          most beautiful places to visit in India. Mussoorie, which is popularly
+          known as the Queen of the Hills, was once a popular summer retreat for
+          the British. And the quaint churches and hotels here are a wonderful
+          reminder of Mussoorie’s colonial past.
+          <br /><br />
+          <b style="color: black">How To Reach:</b>
+          <li>
+            Nearest Airport: Dehradun’s Jolly Grant International Airport (61
+            km)
+          </li>
+
+          <li>Nearest Train Station: Dehradun Railway Station (34 km)</li>
+          <br /><br />
+          <b style="color: black"> Best Time To Visit</b> : April to June
+        </p>
+        <br />
+        <span>Rating |</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+
+    <div class="waterfalls">
+      <div class="card">
+        <img src="dal-lake.jpg" alt="" />
+      </div>
+      <div class="text-box">
+        <h3>3.Srinagar, Jammu & Kashmir</h3>
+        <p>
+          Popularly known as Paradise on Earth, Venice of the East and the City
+          of Lakes, Srinagar is undoubtedly the most beautiful hill station in
+          India. It is situated in the heart of the Kashmir valley, at an
+          elevation of about 1585 m above sea level. Boasting unmatched natural
+          beauty and serenity, Srinagar is a treat for your eyes and soul. From
+          enjoying the mesmerising views of snow-capped mountains, lush valleys
+          and meadows to taking a shikhara ride on Dal Lake and exploring Tulip
+          Garden, you can do so much in Srinagar!
+          <br /><br />
+          <b style="color: black">How To Reach:</b>
+          Nearest Airport: Srinagar Airport <br />
+          Nearest Train Station: Srinagar Railway Station
+          <br /><br />
+          <b style="color: black"> Best Time To Visit</b> : April to September
+        </p>
+        <br />
+        <span>Rating |</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+
+    <div class="waterfalls">
+      <div class="card">
+        <img src="OOTY.jpg" alt="" />
+      </div>
+      <div class="text-box">
+        <h3>4.Ooty, Tamil Nadu</h3>
+        <p>
+          Nestled in Nilgiri Hills and known for its verdant scenic beauty, Ooty
+          is a perfect retreat for city dwellers. The hill station is known for
+          its colourful botanical gardens, serene lakes, lush tea gardens and
+          cosy cottages. Ooty was a popular summer destination for the British
+          and you can still see some lovely colonial architectural gems. To
+          enjoy the best views of the valley and mountains, you must take a ride
+          on the Nilgiri Mountain Railway – the steepest track in Asia and a
+          UNESCO World Heritage Site.
+          <br /><br />
+          <b style="color: black">How To Reach:</b>
+          Nearest Airport: Coimbatore International Airport (87 km) <br />
+          Nearest Train Station: Mettupalayam Railway Station (51 km)
+          <br /><br />
+          <b style="color: black"> Best Time To Visit</b> : March to June
+        </p>
+        <br />
+        <span>Rating |</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+
+    <div class="waterfalls">
+      <div class="card">
+        <img src="Darjelling.jpg" alt="" />
+      </div>
+      <div class="text-box">
+        <h3>5.Darjeeling, West Bengal</h3>
+        <p>
+          A prized jewel in the Himalayan Range, Darjeeling is the perfect
+          getaway for nature lovers and honeymooners. Offering stunning views of
+          the world’s third-highest peak – Kanchenjunga, Darjeeling is a
+          favourite among summer travellers. It is surrounded by emerald-green
+          slopes of tea plantations and home to some beautiful botanical
+          gardens, monasteries, parks and vantage points.
+          <br /><br />
+          <b style="color: black">How To Reach:</b>
+          Nearest Airport: Bagdogra International Airport (70 km) <br />
+          Nearest Train Station: New Jalpaiguri Junction (73 km)
+          <br /><br />
+          <b style="color: black"> Best Time To Visit</b> : April to June
+        </p>
+        <br />
+        <span>Rating |</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span
+          class="fa fa-star fa-star-half-full"
+          style="color: rgb(255, 176, 48)"
+        ></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-options">
+        <div>
+          <h3 class="f-heading">About Tour-info</h3>
+          <ul class="fo1">
+            <li>About Tour-info</li>
+            <li>Top Destinations</li>
+            <li>Our Gallery</li>
+            <li>Why us</li>
+            <li>Categories</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="f-heading">Help & FAQS</h3>
+          <ul class="fo1">
+            <li>Online booking</li>
+            <li>Refund Policies</li>
+            <li>Customer Service</li>
+            <li>Booking Confirmation</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="f-heading">Ways to Book</h3>
+          <ul class="fo1">
+            <li>Booking - options</li>
+            <li>Popular Destinations</li>
+            <li>Cheapest rates</li>
+            <li>Easy to book</li>
+            <li>Categories</li>
+            <li>Book a Trip</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="f-heading">Newsletter</h3>
+          <p id="newsletter">
+            Subscribe our Newletter to stay updated with new Destinations and
+            get notified Through mail
+          </p>
+          <div>
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="Enter Your email"
+            />
+            <button id="news">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <hr style="height: 0.5px" />
+      <div class="footer-text">
+        <t
+          >&copy;Copyright 2023 <strong>Sumit Raj</strong>.All rights reserved
+        </t>
+        <p id="footer-c">Designed By <b id="footer-p">Sumit Raj</b></p>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script src="main.js"></script>
+  </body>
+</html>

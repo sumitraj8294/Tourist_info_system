@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Tourist Information System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body
+    style="
+      background: url(Web-design.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    "
+  >
+    <div class="container">
+      <h1>About Us</h1>
+      <p>
+        Welcome to our Tourist Information System website! We are a dedicated
+        team of travel enthusiasts, passionate about helping tourists explore
+        and experience the best of our region.
+      </p>
+      <p>
+        Our goal is to provide up-to-date and reliable information about various
+        tourist attractions, accommodations, local events, and more, to make
+        your visit memorable and enjoyable.
+      </p>
+      <p>
+        Whether you are a seasoned traveler or a first-time visitor, we aim to
+        assist you in planning your trip and ensuring you have an unforgettable
+        experience in our beautiful destination.
+      </p>
+
+      <button id="backButton">Back to Home</button>
+    </div>
+
+    <script>
+      // Get the back button element
+      const backButton = document.getElementById("backButton");
+
+      // Add event listener for back button click
+      backButton.addEventListener("click", function () {
+        window.location.href = "index.html"; // Replace 'index.html' with your home page URL
+      });
+    </script>
+  </body>
+</html>

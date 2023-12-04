@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="logo">
+        <img src="wlogo.png" alt="" />
+      </div>
+      <div class="menu-options">
+        <a id="menu-options" href="index.html">Home</a>
+
+        <a id="menu-options" href="about.html">About us</a>
+        <a id="menu-options" onclick="openForm()">Book Now</a>
+        <a id="menu-options" href="feedback.html">Feedback</a>
+      </div>
+    </div>
+
+    <!-- menu buttton -->
+
+    <div class="topnav">
+      <div style="display: flex">
+        <img
+          style="margin-left: 30px; margin-top: 10px"
+          width="30px"
+          src="event-organizer-png-8-png-image-organizer-png-350_350.png"
+          alt=""
+        />
+        <h4 style="color: white; margin: 10px; margin-top: 16px"></h4>
+      </div>
+
+      <!-- Navigation links (hidden by default) -->
+
+      <div id="myLinks">
+        <a id="close-button" href="javascript:void(0);" onclick="myFunction1()">
+          &times;</a
+        >
+        <a href="index.html">Home</a>
+        <hr />
+        <a href="#about-us">About us</a>
+        <hr />
+        <a href="#why-us">Why us</a>
+        <hr />
+        <a href="#key-bookings">Key bookings</a>
+        <hr />
+        <a href="#gallery">Gallery</a>
+        <hr />
+        <a href="#contact">Contact</a>
+        <hr />
+
+        <div class="social2">
+          <a
+            title="Linkedin Profile"
+            href="https://www.linkedin.com/in/sumit-raj-a93453227"
+            target="_blank"
+            ><img
+              id="sf"
+              width="20px"
+              height="20px"
+              src="linkedin2.jfif"
+              alt=""
+          /></a>
+          <a
+            title="Click here to DM on instagram"
+            href="https://www.instagram.com\sumit.raj_17"
+            target="_blank"
+            ><img id="sf" width="23x" height="20px" src="iconinsta.jfif" alt=""
+          /></a>
+          <a
+            title="sumit's twitter account"
+            href="https://www.twitter.com\SavageSumit"
+            target="_blank"
+            ><img id="sf" width="20px" height="20px" src="bird.jfif" alt=""
+          /></a>
+        </div>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+
+      <div class="menu-button">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars" id="phone-menu" style="margin-top: 10px"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="form-popup" id="myForm">
+      <span class="close-btn" onclick="closeForm()"> &times; </span>
+      <form action="action_page.php" method="post">
+        <label for="name">Name</label><br />
+        <input
+          type="name"
+          id="name"
+          name="cust_name"
+          required
+          placeholder="Enter Your Name"
+          style="width: 100%; height: 40px"
+        /><br /><br />
+
+        <label for="from">From</label>
+        <input
+          type="text"
+          id="from"
+          name="from_location"
+          required
+          placeholder="Enter Your current Location"
+        /><br /><br />
+
+        <label for="to">To</label>
+        <input
+          type="text"
+          id="to"
+          name="to_location"
+          required
+          placeholder="Enter your destination"
+        /><br /><br />
+        <label for="email">Email</label><br />
+        <input
+          style="width: auto"
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Enter your registered email"
+          style="width: 100%"
+        /><br /><br />
+        <label for="mobile">Mobile Number</label>
+        <input
+          type="text"
+          id="mobile"
+          name="mobile"
+          placeholder="Enter Your mobile Number"
+          required
+        /><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <h2 id="heading">FAMOUS <b id="heading2">NATIONAL PARKS</b></h2>
+
+    <!-- 
+    1. Dudhsagar Waterfalls, GOA -->
+
+    <div class="waterfalls">
+      <div class="card">
+        <img src="jimcorbatt.jpg" alt="" />
+      </div>
+      <div class="text-box">
+        <h3>1.Jim Corbett National Park, Uttarakhand</h3>
+        <p>
+          Located close to Nainital, Jim Corbett National Park is a favorite
+          destination for people looking to spot tigers, making it one of the
+          important national parks in India. Other animals to be spotted here
+          include several species of deer, leopards, jackals, red foxes, black
+          bear, sloth bear, and monkeys. Tourists can book jeep safaris for
+          early mornings and afternoons. It is the first national park in India
+          in case you didn’t know.
+          <br /><br />
+
+          <b style="color: black">How To Reach:</b> Well connected by road and
+          rail to Delhi, Nainital, Moradabad and others. <br />
+          <br />
+          <b style="color: black"> Best Time To Visit</b> : November to June.
+        </p>
+        <br />
+        <span>Rating |</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+
+    <!-- 2. Bhagsu Waterfalls, Himachal Pradesh -->
+
+    <div class="waterfalls">
+      <div class="card">
+        <img src="kaziranga-national-park.jpg" alt="" />
+      </div>
+      <div class="text-box">
+        <h3>2. Kaziranga National Park, Assam</h3>
+        <p>
+          Popularized as the home of the “Big Five”, Kaziranga National Park is
+          the perfect place to spot a few wild animals such as Rhinoceros,
+          Tiger, Elephant, Wild Buffalo and Swamp Deer. Unlike Hemis, which is
+          the highest national park in India , this reserve houses some common
+          hilly animal and bird species.
+          <br /><br />
+          <b style="color: black">How To Reach:</b> Well connected to Kohara,
+          the closest town, by road. <br /><br />
+          <b style="color: black"> Best Time To Visit</b> : November to April.
+        </p>
+        <br />
+        <span>Rating |</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+
+    <!-- 3. Athirapally Waterfalls, Kerala -->
+
+    <div class="waterfalls">
+      <div class="card">
+        <img src="Gir Forest National Park  4.jpg" alt="" />
+      </div>
+      <div class="text-box">
+        <h3>3. Gir Forest National Park, Gujarat</h3>
+        <p>
+          Located in Gujarat, the Gir Forest National Park and Wildlife
+          Sanctuary is one of the best places to spot wild Asiatic lions in
+          their natural habitat. It used to be the hunting reserve for the
+          Nawabs of Junagadh before it was turned into a sanctuary in the year
+          1990. When it was started, there were a mere 12 lions here, and the
+          number has now grown to reach nearly 600. Other animals that one might
+          spot here include sambar, chinkara, chital, porcupine, wild boar,
+          black buck and others. Tourists can enjoy jeep safaris here, towards
+          early mornings, afternoons and early evenings. This is one of the most
+          famous national parks in India that you cannot miss out on!
+          <br /><br />
+          <b style="color: black">How To Reach:</b> well connected by roads to
+          Rajkot and other cities.<br /><br />
+          <b style="color: black"> Best Time To Visit</b> : December to March.
+        </p>
+        <br />
+        <span>Rating |</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+
+    <!-- 4.Irupu Falls,Karnataka -->
+
+    <div class="waterfalls">
+      <div class="card">
+        <img src="Kanha_national_park.jpg" alt="" />
+      </div>
+      <div class="text-box">
+        <h3>4.Kanha National Park, Madhya Pradesh</h3>
+        <p>
+          Sprawled across more than 1,945 sq km, Kanha National Park is one of
+          the first national park in India for tiger reserves to work for
+          Project Tiger. Considered one of the national parks of India, it is
+          also a refuge for the Barasingha and is known to be one of the most
+          well maintained National Parks of Asia. It has been divided into two
+          separate parts, Banjar and Hallon, named after the rivers that flow
+          across it. There are separate zones here, including Kisli, Sarhi,
+          Mukki and Kanha Zone.
+          <br /><br />
+          <b style="color: black">How To Reach:</b> Well connected by road from
+          Nagpur and Jabalpur <br /><br />
+          <b style="color: black"> Best Time To Visit</b> : November to June
+        </p>
+        <br />
+        <span>Rating |</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+
+    <!-- 5. Elephant Falls, Shillong -->
+
+    <div class="waterfalls">
+      <div class="card">
+        <img src="Ranthambore-National-Park-in-Rajasthan.jpg" alt="" />
+      </div>
+      <div class="text-box">
+        <h3>5.Ranthambore National Park, Rajastha</h3>
+        <p>
+          One of the largest national parks in North India, Ranthambore National
+          Park covers an area of 392 sq km. It is a part of Project Tiger and
+          has been a refuge of Royal Bengal Tigers since 1974. The national park
+          also houses a fortress within the park premises, which is a popular
+          attraction for visitors. Apart from tigers, visitors can also spot
+          other animals such as bears, leopards, jackals, elephants, striped
+          hyena, bison, monkeys and several types of deer. The park is also
+          famed for being home to snakes of different varieties. A unique fact
+          about the tigers of Ranthambore is that they lack fear of humans, and
+          continue hunting even in their presence making it apt for spotting
+          them.
+          <b style="color: black">How To Reach:</b> Sawai Madhopur is the
+          closest town and well connected via road.<br /><br />
+          <b style="color: black"> Best Time To Visit</b> : October to May.
+        </p>
+        <br />
+        <span>Rating |</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-options">
+        <div>
+          <h3 class="f-heading">About Tour-info</h3>
+          <ul class="fo1">
+            <li>About Tour-info</li>
+            <li>Top Destinations</li>
+            <li>Our Gallery</li>
+            <li>Why us</li>
+            <li>Categories</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="f-heading">Help & FAQS</h3>
+          <ul class="fo1">
+            <li>Online booking</li>
+            <li>Refund Policies</li>
+            <li>Customer Service</li>
+            <li>Booking Confirmation</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="f-heading">Ways to Book</h3>
+          <ul class="fo1">
+            <li>Booking - options</li>
+            <li>Popular Destinations</li>
+            <li>Cheapest rates</li>
+            <li>Easy to book</li>
+            <li>Categories</li>
+            <li>Book a Trip</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="f-heading">Newsletter</h3>
+          <p id="newsletter">
+            Subscribe our Newletter to stay updated with new Destinations and
+            get notified Through mail
+          </p>
+          <div>
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="Enter Your email"
+            />
+            <button id="news">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <hr style="height: 0.5px" />
+      <div class="footer-text">
+        <t
+          >&copy;Copyright 2023 <strong>Sumit Raj</strong>.All rights reserved
+        </t>
+        <p id="footer-c">Designed By <b id="footer-p">Sumit Raj</b></p>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script src="main.js"></script>
+  </body>
+</html>

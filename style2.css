@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/images/background.jpg);
+    background-size: 100%;
+    text-align: center;
+}
+.menu{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+   
+    z-index: 2;
+    height:80px;
+    background-color: rgb(130, 88, 88);
+}
+.logo{
+    position: absolute;
+    top: -10px;
+    left: 3%;
+}
+.logo img{
+    width: 200px;
+}
+.menu-options{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 20px;
+}
+#menu-options{
+    text-decoration: none;
+    margin-left: 30px;
+    color: white;
+    padding: 10px;
+
+}
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid grey;
+    float: left;
+    width: 17%;
+    background: #f1f1f1;
+    position: absolute;
+    top: 20px;
+    left: 18%;
+    border: none;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 3%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 15px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    position: absolute;
+    left: 35%;
+    top: 20px;
+    border: none;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.menu.sticky{
+    padding: 10px 20px;
+    z-index: 2;
+    height:80px;
+    background-color: rgb(130, 88, 88);
+  
+}
+#menu-options:hover{
+    background-color: gray;
+
+}
+
+/* about waterfalls */
+
+.waterfalls{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px 10% 30px 10%;
+
+
+}
+.waterfall-info{
+    margin-top: 7%;
+    
+}
+#heading{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 120px;
+}
+#heading2{
+    text-align: center;
+    
+    font-family: 'Oswald', sans-serif;
+    color: rgb(255, 251, 251);
+    background-color: rgb(160, 45, 45);
+    padding: 5px;
+}
+/* .section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0px;
+    gap: 20px;
+    
+   
+} */
+.card{
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.377);
+    border-radius: 10px;
+    padding: 0px;
+    
+}
+.card img{
+    width: 100%;
+    height: 100%;
+
+}
+.text-box{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.185);
+    padding: 30px;
+    padding: 30px;
+    text-align: left;
+}
+p{
+    text-align: left;
+    color: gray;
+
+}
+h3{
+    text-align: left;
+    margin-bottom:5%;
+}
+.checked {
+    color: orange;
+}
+.booking-button{
+    background-color: rgb(255, 54, 19);
+    border: none;
+    border-radius: 2px;
+    padding: 8px;
+    margin-left: 10px;
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+.booking-button:hover{
+    background-color: rgb(0, 123, 255);
+}
+.footer{
+    background-color: rgb(40, 36, 36);
+    text-align: center;
+    color: rgb(198, 189, 189);
+    font-size: 13px;
+    padding: 30px;
+  } 
+  #footer-p{
+    color: yellow;
+  }
+  .footer-text{
+    font-size: 13px;
+    padding: 40px 0px 20px 0px;
+  }
+  #footer-c{
+    text-align: center;
+  }
+  
+  /* top button */
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  .footer-options{
+    display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+      text-align: center;
+      margin-left: 2%;
+      margin-right: 2%;
+      margin-top: 10px;
+      padding-top: 0px; 
+      margin-bottom: 20px;
+      gap: 10px;  
+      text-align: left;
+  
+  }
+  .fo1{
+    list-style: none;
+    margin-top: 20px;
+    margin-left: -40px;
+    font-size: 13px;
+  }
+  .f-heading{
+    /* text-decoration: underline; */
+    /* text-decoration-color: red; */
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+  }
+  #newsletter{
+    margin: 20px 0px 10px 0px;
+    font-size: 13px;
+  }
+  #news{
+    background: red;
+    color: white;
+    margin-top: 5px;
+    border-radius: 2px;
+    padding: 3px 15px 3px 2px;
+    border: none;
+  }
+  #email{
+    border: none;
+    border-radius: 2px;
+    height: 22px;
+    width: 120px;
+  }
+
+  .topnav{
+    display: none;
+  }
+
+
+  @media(width<1100px){
+
+    .menu .example{
+      display: none;
+    }
+    .menu-options{
+       display: none;
+    }
+    .logo img{
+       position: absolute;
+       top: 10px;
+       width: 130px;}
+    .topnav {
+       display: revert;
+       width: 100%;
+       height: 30px;
+       /* overflow: hidden; */
+      
+       
+       position: absolute;
+       top: 0;
+       z-index: 2;
+       position: fixed;
+       
+       
+     }
+
+     /* Hide the links inside the navigation menu (except for logo/home) */
+     .topnav #myLinks {
+       display: none;
+       background-color:rgb(255, 250, 250);
+       color: rgb(255, 255, 255);
+       text-align: left;
+       width: 50%;
+       margin-left: 50%;
+       height: 100vh;
+       margin-top: -30px;
+     }
+     .topnav #myLinks:hover{
+       color: rgb(255, 255, 255);
+     }
+     
+     /* Style navigation menu links */
+     .topnav a {
+       color: rgb(42, 38, 38);
+       padding: 14px 16px;
+       text-decoration: none;
+       font-size: 15px;
+       display: block;
+       z-index: 2;
+     }
+     
+     /* Style the hamburger menu */
+     .topnav a.icon {
+       
+       display: block;
+       position: absolute;
+       right: 0;
+       top: 0;
+       width: 60px;
+       height: 60px;
+       color: white;
+     }
+     .icon{
+       width: 20px;
+       height: 50px;
+     }
+     form.example input[type=text] {
+       padding: 10px;
+       font-size: 15px;
+       border: 1px solid grey;
+       float: left;
+       width: 17%;
+       background: #f1f1f1;
+       position: absolute;
+       top: 20px;
+       left: 40%;
+       display: none;
+       border: none;
+     }
+     #close-button{
+      font-weight: bolder;
+      color: rgb(255, 255, 255);
+      font-size: 31px;
+      background-color: rgba(255, 0, 0, 0.781);
+    
+    }
+    }
+    .form-popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid #ccc;
+      background-color: #f2f2f2;
+      padding: 20px;
+      max-width: 400px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      padding: 40px;
+      border-radius: 10px;
+    }
+    
+    /* Close button style */
+    .close-btn {
+      margin-left: 100%;
+      cursor: pointer;
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+      background-color: red;
+      padding: 10px;
+    }
+    
+    /* Form labels style */
+    label {
+      font-weight: bold;
+      color: black;
+    }
+    
+    /* Form input style */
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    /* Form submit button style */
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    /* Form submit button hover style */
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tommy's Indifference Curves</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 400px;
+        margin: 0 auto;
+      }
+      .graph {
+        width: 400px;
+        height: 400px;
+        border: 1px solid #ccc;
+        position: relative;
+      }
+      .point {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #007bff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Tommy's Indifference Curves</h2>
+      <div class="graph">
+        <!-- Plot indifference curve points -->
+        <?php
+                $maxD = 10; // Maximum D value for the curve
+                $step = 0.5; // Step size for plotting points
+
+                for ($m = 0; $m <= 10; $m += $step) {
+                    for ($c = 0; $c <= 10; $c += $step) {
+                        $D = abs(7 - $m) + abs(2 - $c);
+                        $color = ($D / $maxD) * 255; // Color based on D value
+
+                        // Plot point
+                        echo "<div class='point' style='left:" . ($c * 30) . "px; top:" . (400 - $m * 30) . "px; background-color: rgb(0, $color, 255)'></div>";
+                    }
+                }
+            ?>
+      </div>
+    </div>
+  </body>
+</html>
